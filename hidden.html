@@ -27,8 +27,7 @@ var wrong=0;
 function processGuess(){
     console.log("Getting form values")
     secret = document.getElementById("form1_secret").value
-    password = document.getElementById("form1_guess").value
-    confirmed = confirm("Are these the values? "+secret+" and "+password)
+    guess= document.getElementById("form1_guess").value
     out = document.getElementById("result")
     if(secret == guess){
         correct=correct+1;
