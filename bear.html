@@ -15,7 +15,7 @@
 
 <body>
 
-    <h2>Alekya  builds a bear</h2>
+    <h2>Alekya builds a bear</h2>
 
     <form >
         <div class="container">
@@ -32,14 +32,16 @@
            <label for="shirt">Shirt</label> <br>
            </div>
             <div>
-            <input type="button" onclick="startBear()" value="Start a bear">
+            <input type="button" onclick="startBear()" class="btn btn-info" value="Start a bear">
             </div>
         </div>
     </form>
 
-    <p id="result">Result </p>
+    <p id="result"><i>Result</i> </p>
 
     <form>
+        <div class="container">
+
         <div class="form-group">
         <label for="property">Enter a property </label>
         <input type="text" id="property" name="property" value="color"> <br>
@@ -49,14 +51,15 @@
         <label for="value">Enter a value </label>
         <input type="text" id="value" name="value"> <br>
         </div>
-        <div>
-        <input type="button" onclick="updatebear()" value="Update the bear">
-        </div>
+        
+        <input type="button" onclick="updatebear()" class="btn btn-info" value="Update the bear">
+    
+    </div>
     </form>
 
 
 
-    <p id="result">Result2 </p>
+    <p id="result2"><i>Result</i></p>
 
     <script>
         var my_bear;
