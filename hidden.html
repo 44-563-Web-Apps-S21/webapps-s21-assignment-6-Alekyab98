@@ -16,15 +16,17 @@
 <h2>Hidden things by Billakanti Alekya </h2>
 
 <form>
+    <div class="container">
     <div class="form-group">
-    <label for="form1_secret">The secret word</label>
-    <input type ="password" id="form1_secret" name="form1_secret" min=10 max=50 step=2 value="      "> <br>
+    <label for="form1_secret">The Secret Word </label><br>
+    <input type ="password" id="form1_secret" name="form1_secret" autofocus  value="secret"> <br>
     </did>
     <div class="form-group">
-    <label for="form1_guess">Enter a guess </label>
-    <input type ="text" id="form1_guess" name="form1_guess" autofocus> <br>
+    <label for="form1_guess">Enter a Guess </label><br>
+    <input type ="text" id="form1_guess" name="form1_guess" autofocus > <br>
     </div>
-    <input type="button" onclick="processGuess()" value="Check the guess">
+    </div>
+    <input type="button" onclick="processGuess()" class="btn btn-info" value="Check the guess">
 </form>
 
 
@@ -52,9 +54,11 @@ function processGuess(){
 }
 
 </script>
+
 <div class="container">
     <img id="plant" src="Basil.PNG" width="200" height="200" onclick="rotateImage()">
 </div>
+
 <script>
     var currentImage=0;
     function rotateImage()
