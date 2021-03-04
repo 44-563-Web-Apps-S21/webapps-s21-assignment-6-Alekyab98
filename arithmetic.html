@@ -60,7 +60,7 @@
 
 </form>
 <div class="container">
-<p id="result"><i>Result</i> </p></div>
+<p id="result2"><i>Result</i> </p></div>
 
 <script>
     function permutations() {
@@ -79,23 +79,23 @@
 
     function processRadio() {
 
-      var num1 = parseInt(document.getElementById("num1").value)
-       var num2 = parseInt(document.getElementById("num2").value)
+      var one = parseInt(document.getElementById("one").value)
+       var two = parseInt(document.getElementById("two").value)
 
         out = document.getElementById("result2")
       
        if (document.getElementById("processRadio1").checked) {
-       out.innerHTML = num1 + num2;
+       out.innerHTML = one + two;
         }
         
        else if (document.getElementById("processRadio2").checked) {
-            out.innerHTML = num1 - num2;
+            out.innerHTML = one - two;
         }
         else if (document.getElementById("processRadio3").checked) {
-            out.innerHTML = num1 * num2;
+            out.innerHTML = one * two;
         }
         else if (document.getElementById("processRadio4").checked) {
-            out.innerHTML = num1 / num2;
+            out.innerHTML = one / two;
         }
 
     }
